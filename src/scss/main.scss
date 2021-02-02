@@ -42,6 +42,9 @@ body {
     border-radius: 8px;
     font-weight: 600;
     min-width: 79px;
+    &--save {
+      background: #121232;
+    }
   }
   &__label {
     display: block;
