@@ -33,8 +33,19 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Hello world - with simple PWA support!</h1>
-
+<main class="main">
+  <h1 class="header">Simple editor</h1>
+  <form class="form">
+    <p class="form__wrapper">
+      <label class="form__label" for="message">Your message</label>
+      <textarea id="message" class="form__message"></textarea>
+    </p>
+    <div class="form__actions">
+      <button class="form__button form__button--load">Load</button>
+      <button class="form__button form__button--save">Save</button>
+    </div>
+  </form>
+</main>
     <script src="js/main.js"></script>
   </body>
 </html>
