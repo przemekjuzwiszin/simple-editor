@@ -20,3 +20,23 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+
+.main {
+  max-width: 400px;
+  width: 100%;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form {
+  &__wrapper {
+
+  }
+  &__label {
+    display: block;
+  }
+}
