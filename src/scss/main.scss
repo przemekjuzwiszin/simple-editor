@@ -35,6 +35,8 @@ body {
 
 .form {
   &__actions {
+    display: flex;
+    justify-content: flex-end;
     margin-top: 24px;
   }
   &__wrapper {
