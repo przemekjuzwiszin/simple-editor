@@ -22,6 +22,12 @@ console.log(formMessage);
 const saveMessage = document.querySelector('.form__button--save-js');
 console.log(saveMessage);
 
+
 const loadMessage = document.querySelector('.form__button--load-js');
 console.log(loadMessage);
 
+saveMessage.addEventListener('click', (e) => {
+  e.preventDefault();
+  const formMessage = document.querySelector('.form__message--js');
+  localStorage.setItem('message', formMessage.value);
+});
