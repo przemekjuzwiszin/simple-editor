@@ -22,4 +22,6 @@ console.log(formMessage);
 const saveMessage = document.querySelector('.form__button--save-js');
 console.log(saveMessage);
 
+const loadMessage = document.querySelector('.form__button--load-js');
+console.log(loadMessage);
 
