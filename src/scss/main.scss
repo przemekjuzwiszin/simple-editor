@@ -1,9 +1,11 @@
 @import "_normalize";
 @import "_variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 html {
   box-sizing: border-box;
+  font-family: "Open Sans";
 }
 
 *, *:before, *:after {
