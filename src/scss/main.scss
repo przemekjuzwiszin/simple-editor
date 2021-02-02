@@ -15,4 +15,8 @@ html {
 body {
   color: #000000;
   background: #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
