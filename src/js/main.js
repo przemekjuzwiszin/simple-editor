@@ -31,3 +31,8 @@ saveMessage.addEventListener('click', (e) => {
   const formMessage = document.querySelector('.form__message--js');
   localStorage.setItem('message', formMessage.value);
 });
+
+loadMessage.addEventListener('click', (e) => {
+e.preventDefault();
+formMessage.value = localStorage.getItem('message');
+});
