@@ -19,4 +19,7 @@ if ('serviceWorker' in navigator) {
 const formMessage = document.querySelector('.form__message--js');
 console.log(formMessage);
 
+const saveMessage = document.querySelector('.form__button--save-js');
+console.log(saveMessage);
+
 
