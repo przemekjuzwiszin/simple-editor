@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
-
-console.log(`Hello world!`);
+const formMessage = document.querySelector('.form__message--js');
+console.log(formMessage);
 
 
