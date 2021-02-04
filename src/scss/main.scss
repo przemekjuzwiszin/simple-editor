@@ -1,20 +1,22 @@
 @import "_normalize";
 @import "_variables";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 html {
   box-sizing: border-box;
   font-family: "Open Sans";
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   color: #000000;
-  background: #EEEEEE;
+  background: #eeeeee;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +42,6 @@ body {
     margin-top: 24px;
   }
   &__wrapper {
-
   }
   &__button {
     border: 1px solid #121232;
@@ -50,7 +51,7 @@ body {
     min-width: 79px;
     &--save {
       background: #121232;
-      color: #FFFFFF
+      color: #ffffff;
     }
     &--load {
       margin-right: 42px;
