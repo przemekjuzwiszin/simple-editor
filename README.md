@@ -30,3 +30,15 @@ To run the page locally, please follow the instructions below?
 `gulp`
 
 To publish your page using github pages use `npm run deploy`
+
+#### If you are having problems installing npm packages and running gulp. Please follow the instructions below.
+
+Install the last version.
+
+`npm install node-sass@latest`
+
+`npm rebuild node-sass`
+
+`npm i`
+
+`gulp`
