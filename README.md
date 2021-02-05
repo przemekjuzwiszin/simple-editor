@@ -16,6 +16,17 @@ Please visit this page to see the editor 🧐: [simply-editor](https://przemekju
     - button load: loads content from local storage.
 
 
+## Tools that I used in the project:
+- git
+- node.js & npm
+- gulp starterkit
+    - local server with auto refresh
+    - SCSS and sourcemap support
+- Trello
+- Figma
+- Visual Studio Code
+  
+  
 ### How to run the page local?
 Download the web starter kit.
 
@@ -30,6 +41,7 @@ To run the page locally, please follow the instructions below?
 `gulp`
 
 To publish your page using github pages use `npm run deploy`
+
 
 #### If you are having problems installing npm packages and running gulp. Please follow the instructions below.
 
