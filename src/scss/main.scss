@@ -70,6 +70,10 @@ body {
     border-radius: 8px;
     font-weight: 600;
     min-width: 79px;
+    transition: transform .3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
     &--save {
       background: #121232;
       color: #ffffff;
