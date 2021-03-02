@@ -88,6 +88,6 @@ body {
   height: 50px;
   transition: transform 1s ease-in-out;
   &:hover {
-    transform: translateY(-20px);
+    transform: translateY(-20px) translateX(50px);
   }
 }
