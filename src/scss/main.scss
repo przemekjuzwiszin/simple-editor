@@ -54,6 +54,11 @@ body {
       color: #ffffff;
     }
     &--load {
+      background: #fff;
+      transition: background .3s ease-in-out;
+      &:hover {
+        background: #D3D4D8;
+      }
       margin-right: 42px;
     }
   }
