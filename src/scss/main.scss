@@ -4,10 +4,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 @keyframes backgroundChange {
-  from {
-    backround: blue;
-  } to {
+  0% {
+    background: yellow;
+    transform: scale(1);
+  } 
+  43%{
     background: red;
+    transform: scale(3);
+  }
+  77% {
+    background: green;
+    transform: scale(.8);
+  }
+  100% {
+    background: hotpink;
+    transform: scale(1);
   }
 }
 
@@ -59,10 +70,6 @@ body {
     border-radius: 8px;
     font-weight: 600;
     min-width: 79px;
-    transition: background 0.3s ease-in-out;
-    &--background {
-      background: hotpink;
-    }
     &--save {
       background: #121232;
       color: #ffffff;
