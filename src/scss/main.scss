@@ -38,17 +38,22 @@ body {
 .form {
   &__actions {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-top: 24px;
   }
   &__wrapper {
   }
   &__button {
+    background: #fff;
     border: 1px solid #121232;
     padding: 12px 16px;
     border-radius: 8px;
     font-weight: 600;
     min-width: 79px;
+    transition: background .3s ease-in-out;
+    &--background {
+      background: hotpink;
+    }
     &--save {
       background: #121232;
       color: #ffffff;
@@ -56,10 +61,6 @@ body {
     &--load {
       background: #fff;
       color: #000;
-      transition: background .3s ease-in-out;
-      &:hover {
-        background: #D3D4D8;
-      }
       margin-right: 42px;
     }
   }
