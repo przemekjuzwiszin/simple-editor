@@ -55,6 +55,7 @@ body {
     }
     &--load {
       background: #fff;
+      color: #000;
       transition: background .3s ease-in-out;
       &:hover {
         background: #D3D4D8;
