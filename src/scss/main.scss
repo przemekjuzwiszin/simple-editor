@@ -7,14 +7,14 @@
   0% {
     background: yellow;
     transform: scale(1);
-  } 
-  43%{
+  }
+  43% {
     background: red;
     transform: scale(3);
   }
   77% {
     background: green;
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   100% {
     background: hotpink;
@@ -70,7 +70,7 @@ body {
     border-radius: 8px;
     font-weight: 600;
     min-width: 79px;
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     &:hover {
       transform: scale(1.05);
     }
