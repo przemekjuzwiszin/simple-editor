@@ -114,3 +114,10 @@ path.letter-w {
     fill: white;
   }
 }
+
+g.scale {
+  transition: transform .3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
