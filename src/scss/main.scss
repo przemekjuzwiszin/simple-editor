@@ -107,14 +107,6 @@ body {
   height: 50px;
 }
 
-path.letter-w {
-  fill: black;
-  transition: fill .3s ease-in-out;
-  &:hover {
-    fill: white;
-  }
-}
-
 g.scale {
   transition: transform .3s ease-in-out;
   &:hover {
