@@ -109,4 +109,7 @@ body {
 
 path.letter-w {
   fill: black;
+  &:hover {
+    fill: white;
+  }
 }
