@@ -109,6 +109,7 @@ body {
 
 path.letter-w {
   fill: black;
+  transition: fill .3s ease-in-out;
   &:hover {
     fill: white;
   }
