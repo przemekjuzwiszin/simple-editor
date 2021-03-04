@@ -308,6 +308,42 @@ template {
 [hidden] {
   display: none; }
 
+@-webkit-keyframes backgroundChange {
+  0% {
+    background: yellow;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  43% {
+    background: red;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  77% {
+    background: green;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    background: hotpink;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes backgroundChange {
+  0% {
+    background: yellow;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  43% {
+    background: red;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  77% {
+    background: green;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    background: hotpink;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -334,6 +370,7 @@ body {
   min-height: 100vh; }
 
 .main {
+  position: relative;
   max-width: 400px;
   width: 100%; }
 
@@ -347,21 +384,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 24px; }
 
 .form__button {
+  background: #fff;
   border: 1px solid #121232;
   padding: 12px 16px;
   border-radius: 8px;
   font-weight: 600;
-  min-width: 79px; }
+  min-width: 79px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+  .form__button:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
   .form__button--save {
     background: #121232;
     color: #ffffff; }
   .form__button--load {
+    background: #fff;
+    color: #000;
     margin-right: 42px; }
 
 .form__label {
@@ -375,5 +424,24 @@ body {
   width: 100%;
   border-radius: 8px;
   min-height: 200px; }
+
+.test {
+  position: absolute;
+  bottom: 0;
+  background: red;
+  left: 0;
+  width: 50px;
+  height: 50px; }
+
+g.scale {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+  g.scale:hover {
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02); }
 
 /*# sourceMappingURL=main.css.map */
