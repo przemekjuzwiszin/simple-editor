@@ -5,19 +5,23 @@
 
 @keyframes backgroundChange {
   0% {
-    background: yellow;
+    background: #eeeeee;
     transform: scale(1);
   }
-  43% {
-    background: red;
-    transform: scale(3);
+  25% {
+    background: #9ad2cb;
+    transform: scale(1);
   }
-  77% {
-    background: green;
-    transform: scale(0.8);
+  50% {
+    background: #f4e285;
+    transform: scale(1);
+  }
+  75% {
+    background: #8cb369;
+    transform: scale(1);
   }
   100% {
-    background: hotpink;
+    background: #eeeeee;
     transform: scale(1);
   }
 }
@@ -37,22 +41,28 @@ body {
   color: #000000;
   background: #eeeeee;
   display: flex;
+  padding: 16px;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  animation: backgroundChange 10s infinite;
+  @media (max-width: 320px) {
+    min-width: 260px;
+  }
 }
 
 .main {
+  display: flex;
   position: relative;
-  max-width: 400px;
   width: 100%;
+  flex-direction: column;
+  max-width: 400px;
 }
 
 .header {
   font-size: 32px;
   font-weight: 600;
-  margin: 0;
-  margin-bottom: 24px;
+  margin: 32px 0 16px;
 }
 
 .form {
@@ -60,8 +70,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
-  }
-  &__wrapper {
   }
   &__button {
     background: #fff;
@@ -96,6 +104,10 @@ body {
     border-radius: 8px;
     min-height: 200px;
   }
+}
+
+.position {
+  margin: 0 auto;
 }
 
 g.scale {
