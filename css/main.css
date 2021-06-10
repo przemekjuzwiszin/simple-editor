@@ -310,37 +310,45 @@ template {
 
 @-webkit-keyframes backgroundChange {
   0% {
-    background: yellow;
+    background: #eeeeee;
     -webkit-transform: scale(1);
             transform: scale(1); }
-  43% {
-    background: red;
-    -webkit-transform: scale(3);
-            transform: scale(3); }
-  77% {
-    background: green;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8); }
+  25% {
+    background: #9ad2cb;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    background: #f4e285;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  75% {
+    background: #8cb369;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   100% {
-    background: hotpink;
+    background: #eeeeee;
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
 @keyframes backgroundChange {
   0% {
-    background: yellow;
+    background: #eeeeee;
     -webkit-transform: scale(1);
             transform: scale(1); }
-  43% {
-    background: red;
-    -webkit-transform: scale(3);
-            transform: scale(3); }
-  77% {
-    background: green;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8); }
+  25% {
+    background: #9ad2cb;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    background: #f4e285;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  75% {
+    background: #8cb369;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
   100% {
-    background: hotpink;
+    background: #eeeeee;
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
@@ -361,24 +369,36 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 16px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+  -webkit-animation: backgroundChange 10s infinite;
+          animation: backgroundChange 10s infinite; }
+  @media (max-width: 320px) {
+    body {
+      min-width: 260px; } }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  max-width: 400px;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 400px; }
 
 .header {
   font-size: 32px;
   font-weight: 600;
-  margin: 0;
-  margin-bottom: 24px; }
+  margin: 32px 0 16px; }
 
 .form__actions {
   display: -webkit-box;
@@ -424,6 +444,9 @@ body {
   width: 100%;
   border-radius: 8px;
   min-height: 200px; }
+
+.position {
+  margin: 0 auto; }
 
 g.scale {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
