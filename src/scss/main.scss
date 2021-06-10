@@ -5,19 +5,23 @@
 
 @keyframes backgroundChange {
   0% {
-    background: yellow;
+    background: #eeeeee;
     transform: scale(1);
   }
-  43% {
-    background: red;
-    transform: scale(3);
+  25% {
+    background: #9ad2cb;
+    transform: scale(1);
   }
-  77% {
-    background: green;
-    transform: scale(0.8);
+  50% {
+    background: #f4e285;
+    transform: scale(1);
+  }
+  75% {
+    background: #8cb369;
+    transform: scale(1);
   }
   100% {
-    background: hotpink;
+    background: #eeeeee;
     transform: scale(1);
   }
 }
@@ -40,6 +44,10 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  animation: backgroundChange 10s infinite;
+  @media (max-width: 320px) {
+    min-width: 260px;
+  }
 }
 
 .main {
@@ -60,8 +68,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
-  }
-  &__wrapper {
   }
   &__button {
     background: #fff;
