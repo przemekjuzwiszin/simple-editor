@@ -51,16 +51,17 @@ body {
 }
 
 .main {
+  display: flex;
   position: relative;
-  max-width: 400px;
   width: 100%;
+  flex-direction: column;
+  max-width: 400px;
 }
 
 .header {
   font-size: 32px;
   font-weight: 600;
-  margin: 0;
-  margin-bottom: 24px;
+  margin: 32px 0 16px;
 }
 
 .form {
@@ -102,6 +103,10 @@ body {
     border-radius: 8px;
     min-height: 200px;
   }
+}
+
+.position {
+  margin: 0 auto;
 }
 
 g.scale {
