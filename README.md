@@ -1,13 +1,17 @@
-![screenshot editor](gh/simply-editor.png)
+![Simple editor screenshot](src/assets/img/gh.png)
 
-# Refresh-resistant editor.
+# Simple editor 📝
 
-Please visit this page to see the editor 🧐: [simply-editor](https://przemekjuzwiszin.github.io/simple-editor)
+![Simple editor mobile screenshot](src/assets/img/gh_mobile.png)
+
+Simply editor uses CSS animations and local storage.
+
+Please visit website: [Simply editor](https://przemekjuzwiszin.github.io/simple-editor)
 
 
-## Steps that I took to create this editor.
-1. I have set up a new git repository. 🧬
-2. I have uploaded the [wtf-gulp-starterkit](https://github.com/maciejkorsan/wtf-gulp-starter). 🧰
+## Steps that I took to create this editor: 🏆
+1. I have set up a new git repository.
+2. I have uploaded the [wtf-gulp-starterkit](https://github.com/maciejkorsan/wtf-gulp-starter).
 3. I use a git branch to make changes.
 4. I created a simple graphic design and transferred it to HTML and CSS code.
 5. I use the querySelector function to get the textarea and buttons element.
@@ -16,18 +20,37 @@ Please visit this page to see the editor 🧐: [simply-editor](https://przemekju
     - button load: loads content from local storage.
 
 
-## Tools that I used in the project:
-- git
-- node.js & npm
-- gulp starterkit
-    - local server with auto refresh
-    - SCSS and sourcemap support
+### Tools and technologies I've used: 🔧 
+- Git
 - Trello
 - Figma
 - Visual Studio Code
+- Gulp starterkit
+    - local server with auto refresh
+    - SCSS and sourcemap support
+- CSS: flex
+- HTML
+- JavaScript
+- Markdown
+
+### What I learned? 📦
+
+- Adding --js modifier to add JavaScript code
+- Cutting the design
+- Using @media queries
+- Using BEM for styling
+- Building a responsive website
+- Writing semantic HTML
+
+### I learned something about: 🤔
+
+- node.js & npm packages
+- Responsive web applications
+- CSS: animations
+- JS: Local storage
+- JS: DOM manipulations
   
-  
-### How to run the page local?
+#### How to run the page local?
 Download the web starter kit.
 
 [wtf-gulp-starter](https://github.com/maciejkorsan/wtf-gulp-starter)
