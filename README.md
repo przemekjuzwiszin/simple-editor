@@ -33,7 +33,7 @@ Please visit website: [Simply editor](https://przemekjuzwiszin.github.io/simple-
 - JavaScript
 - Markdown
 
-### What I learned? 📦
+### What I learned: 📦
 
 - Adding --js modifier to add JavaScript code
 - Cutting the design
